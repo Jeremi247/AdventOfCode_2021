@@ -22,7 +22,7 @@ namespace AdventOfCode_2021.Day2
     {
         public override string CalculateOutput( bool useAlternate = false )
         {
-            string[] input = File.ReadAllLines( "InputFiles/Day2_Input.txt" );
+            string[] input = GetInput();
 
             Command[] commands = ParseInput( input );
 

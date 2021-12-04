@@ -9,7 +9,7 @@ namespace AdventOfCode_2021.Day3
     {
         public override string CalculateOutput( bool useAlternate = false )
         {
-            string[] input = File.ReadAllLines( "InputFiles/Day3_Input.txt" );
+            string[] input = GetInput();
 
             //input = new string[]{
             //    "00100",

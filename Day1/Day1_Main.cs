@@ -9,7 +9,7 @@ namespace AdventOfCode_2021.Day1
     {
         public override string CalculateOutput( bool useAlternate = false )
         {
-            string[] input = File.ReadAllLines( "InputFiles/Day1_Input.txt" );
+            string[] input = GetInput();
 
             int[] parsedInputs = ParseInput( input );
 

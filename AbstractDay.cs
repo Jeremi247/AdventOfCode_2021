@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace AdventOfCode_2021
@@ -8,5 +9,10 @@ namespace AdventOfCode_2021
     {
         public abstract string CalculateOutput( bool useAlternate = false );
         public abstract int GetDayNumber();
+
+        protected string[] GetInput()
+        {
+            return File.ReadAllLines( "InputFiles/Day" + GetDayNumber() + "_Input.txt" );
+        }
     }
 }
